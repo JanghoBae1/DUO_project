@@ -1,0 +1,81 @@
+
+create  table  category(
+ category_id  int  primary key auto_increment 
+ , category_name varchar(30)
+) default character set utf8;
+
+create table product(
+  product_id  int primary key auto_increment 
+, category_id int 
+, product_name varchar(30)
+, price  int  default 0 
+, introduce text 
+, detail text 
+, filename varchar(25)
+, constraint fk_category_product foreign key (category_id)  references category(category_id)
+) default character set utf8;
+
+create table  member(
+  member_id  int primary key auto_increment 
+, member_name varchar(20)
+, email varchar(30)
+, addr1 varchar(100)
+, addr2 varchar(50)
+, regdate timestamp default now()
+) default character set utf8;
+
+create table score(
+  score_id  int primary key auto_increment
+, product_id int 
+, member_id int 
+, star int default 0
+, constraint fk_product_score  foreign key(product_id) references product(product_id)
+, constraint fk_member_score foreign key(member_id)  references member(member_id)
+);
+
+create  table  product_img(
+  product_img_id int primary key auto_increment 
+, product_id int 
+, img varchar(25)
+, constraint fk_product_product_img foreign key (product_id) references product(product_id)
+) default character set utf8;
+
+create table paymethod(
+  paymethod_id int primary key auto_increment 
+, method varchar(20)
+) default character set utf8;
+
+create table order_summary(
+   order_summary_id int primary key auto_increment 
+ , member_id int 
+ , paymethod_id int 
+ , orderdate timestamp  default now() 
+ , constraint fk_member_order_summary foreign key (member_id) references member(member_id)
+ , constraint fk_paymethod_order_summary foreign key (paymethod_id) references paymethod(paymethod_id)
+);
+
+create table order_detail(
+  order_detail_id  int primary key auto_increment 
+, order_summary_id int 
+, product_id int 
+, ea int default 0 
+, constraint fk_order_summary_order_detail foreign key (order_summary_id) references order_summary(order_summary_id)
+, constraint fk_product_order_detail foreign key (product_id) references product(product_id)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

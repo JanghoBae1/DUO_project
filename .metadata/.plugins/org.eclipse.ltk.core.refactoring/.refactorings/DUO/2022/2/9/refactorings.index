@@ -1,0 +1,26 @@
+1645520668725	Delete elements
+1645520674637	Delete element
+1645520733789	Rename package 'com.koreait.shoppingmall.aop'
+1645520752893	Rename package 'com.koreait.shoppingmall.util'
+1645520776649	Rename package 'com.koreait.shoppingmall.mybatis'
+1645520798099	Rename package 'com.koreait.shoppingmall.model.product'
+1645520817908	Rename package 'com.koreait.shoppingmall.model.category'
+1645520852284	Rename package 'com.koreait.shoppingmall.controller.admin'
+1645520886851	Rename package 'com.koreait.shoppingmall.controller.shop'
+1645520896728	Rename package 'com.koreait.shoppingmall.domain'
+1645520924524	Rename package 'com.koreait.shoppingmall.model.admin'
+1645520937900	Rename package 'com.koreait.shoppingmall.exception'
+1645521038430	Rename package 'com.project.duol.model.admin'
+1645522043054	Delete elements
+1645522050873	Delete elements
+1645522056132	Delete element
+1645522175263	Rename package 'com.koreait.shoppingmall.aop'
+1645522188198	Rename package 'com.koreait.shoppingmall.controller.admin'
+1645522207473	Rename package 'com.koreait.shoppingmall.controller.shop'
+1645522221203	Rename package 'com.koreait.shoppingmall.domain'
+1645522231775	Rename package 'com.koreait.shoppingmall.exception'
+1645522242697	Rename package 'com.koreait.shoppingmall.model.admin'
+1645522258432	Rename package 'com.koreait.shoppingmall.model.category'
+1645522267606	Rename package 'com.koreait.shoppingmall.model.product'
+1645522277807	Rename package 'com.koreait.shoppingmall.mybatis'
+1645522289553	Rename package 'com.koreait.shoppingmall.util'
